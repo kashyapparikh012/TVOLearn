@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-20T21:30:38 EDT" name="Default suite" finished-at="2024-05-20T21:35:56 EDT" duration-ms="317467">
+    <groups>
+    </groups>
+    <test started-at="2024-05-20T21:30:38 EDT" name="Default test" finished-at="2024-05-20T21:35:56 EDT" duration-ms="317467">
+      <class name="testpackage.TVOLearnTests">
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:30:38 EDT" name="initSetup" finished-at="2024-05-20T21:30:48 EDT" duration-ms="9729" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyNavigationToSubjectPageTest()[pri:1, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:30:48 EDT" name="verifyNavigationToSubjectPageTest" finished-at="2024-05-20T21:31:46 EDT" duration-ms="58050" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Grade 8 - Mathematics | TVO Learn] but found [Grade 8 Mathematics | TVO Learn]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Grade 8 - Mathematics | TVO Learn] but found [Grade 8 Mathematics | TVO Learn]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at testpackage.TVOLearnTests.verifyNavigationToSubjectPageTest(TVOLearnTests.java:102)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigationToSubjectPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:31:46 EDT" name="tearDown" finished-at="2024-05-20T21:31:49 EDT" duration-ms="2498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:31:49 EDT" name="initSetup" finished-at="2024-05-20T21:32:03 EDT" duration-ms="14016" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyHeadingsOnSubjectPageTest()[pri:2, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:32:03 EDT" name="verifyHeadingsOnSubjectPageTest" finished-at="2024-05-20T21:33:30 EDT" duration-ms="86657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeadingsOnSubjectPageTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:33:30 EDT" name="tearDown" finished-at="2024-05-20T21:33:32 EDT" duration-ms="2780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:33:32 EDT" name="initSetup" finished-at="2024-05-20T21:33:46 EDT" duration-ms="13567" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyBreadcrumbMenuItems()[pri:3, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:33:46 EDT" name="verifyBreadcrumbMenuItems" finished-at="2024-05-20T21:34:04 EDT" duration-ms="18342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBreadcrumbMenuItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:04 EDT" name="tearDown" finished-at="2024-05-20T21:34:05 EDT" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:05 EDT" name="initSetup" finished-at="2024-05-20T21:34:12 EDT" duration-ms="7460" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyCollaborationAndForTeachersHeadersNavigation()[pri:4, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:12 EDT" name="verifyCollaborationAndForTeachersHeadersNavigation" finished-at="2024-05-20T21:34:19 EDT" duration-ms="7272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCollaborationAndForTeachersHeadersNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:19 EDT" name="tearDown" finished-at="2024-05-20T21:34:20 EDT" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:20 EDT" name="initSetup" finished-at="2024-05-20T21:34:26 EDT" duration-ms="6336" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyLearningResourcesNavigation()[pri:5, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:26 EDT" name="verifyLearningResourcesNavigation" finished-at="2024-05-20T21:34:32 EDT" duration-ms="6286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearningResourcesNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:32 EDT" name="tearDown" finished-at="2024-05-20T21:34:33 EDT" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:33 EDT" name="initSetup" finished-at="2024-05-20T21:34:42 EDT" duration-ms="9727" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyLearningActivitiesSectionTest()[pri:6, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:42 EDT" name="verifyLearningActivitiesSectionTest" finished-at="2024-05-20T21:34:45 EDT" duration-ms="3083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLearningActivitiesSectionTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:45 EDT" name="tearDown" finished-at="2024-05-20T21:34:46 EDT" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:46 EDT" name="initSetup" finished-at="2024-05-20T21:34:54 EDT" duration-ms="8178" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyResourceLinksAndImages()[pri:7, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:54 EDT" name="verifyResourceLinksAndImages" finished-at="2024-05-20T21:34:57 EDT" duration-ms="3063" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResourceLinksAndImages -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:57 EDT" name="tearDown" finished-at="2024-05-20T21:34:57 EDT" duration-ms="365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:34:57 EDT" name="initSetup" finished-at="2024-05-20T21:35:04 EDT" duration-ms="6972" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyTotalLessonsForGrade9To12()[pri:8, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:04 EDT" name="verifyTotalLessonsForGrade9To12" finished-at="2024-05-20T21:35:08 EDT" duration-ms="3569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTotalLessonsForGrade9To12 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:08 EDT" name="tearDown" finished-at="2024-05-20T21:35:08 EDT" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:08 EDT" name="initSetup" finished-at="2024-05-20T21:35:19 EDT" duration-ms="10783" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifySubscribeSection()[pri:9, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:19 EDT" name="verifySubscribeSection" finished-at="2024-05-20T21:35:25 EDT" duration-ms="6043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubscribeSection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:25 EDT" name="tearDown" finished-at="2024-05-20T21:35:25 EDT" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initSetup(java.lang.String)[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:25 EDT" name="initSetup" finished-at="2024-05-20T21:35:34 EDT" duration-ms="9190" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSetup -->
+        <test-method signature="verifyFooterItemsNavigation()[pri:10, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:34 EDT" name="verifyFooterItemsNavigation" finished-at="2024-05-20T21:35:55 EDT" duration-ms="21021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterItemsNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testpackage.TVOLearnTests@63021689]" started-at="2024-05-20T21:35:55 EDT" name="tearDown" finished-at="2024-05-20T21:35:56 EDT" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testpackage.TVOLearnTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="5" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="testpackage.TVOLearnTests">
+        <methods>
+          <include name="verifyBreadcrumbMenuItems"/>
+          <include name="verifyFooterItemsNavigation"/>
+          <include name="tearDown"/>
+          <include name="verifySubscribeSection"/>
+          <include name="initSetup"/>
+          <include name="verifyCollaborationAndForTeachersHeadersNavigation"/>
+          <include name="verifyLearningResourcesNavigation"/>
+          <include name="verifyResourceLinksAndImages"/>
+          <include name="verifyNavigationToSubjectPageTest"/>
+          <include name="verifyTotalLessonsForGrade9To12"/>
+          <include name="verifyHeadingsOnSubjectPageTest"/>
+          <include name="verifyLearningActivitiesSectionTest"/>
+        </methods>
+      </class> <!-- testpackage.TVOLearnTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
