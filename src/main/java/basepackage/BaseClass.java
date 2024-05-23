@@ -1,11 +1,19 @@
 package basepackage;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import utility.TimeUtils;
@@ -56,4 +64,24 @@ public class BaseClass {
 		/* Set the implicit wait timeout using the value from TimeUtils */
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TimeUtils.implicitWait));
 	}
+	
+	/*
+	 * Method to capture a screenshot with the given test method name
+	 * 
+	 * @param testMethodName the name of the test method for the screenshot file
+	 * @return the path to the saved screenshot file
+	 */
+	public static String getScreenshot(String testMethodName) {
+		String dateName = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		String destination = System.getProperty("user.dir") + "/FailedTestScreenshots/" + testMethodName + "_" + dateName + ".png";
+		try {
+			FileUtils.copyFile(source, new File(destination));
+			}
+			catch(IOException e) {
+				e.printStackTrace();
+			}
+		return destination;
+	}
+	
 }

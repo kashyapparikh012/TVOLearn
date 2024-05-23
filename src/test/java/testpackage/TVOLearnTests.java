@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -21,7 +22,9 @@ import pagespackage.NbaPage;
 import pagespackage.PrivacyNoticePage;
 import pagespackage.SubjectPage;
 import pagespackage.TermsPage;
+import listenerpackage.ExtentReportManager;
 
+@Listeners(ExtentReportManager.class)
 public class TVOLearnTests extends BaseClass {
 	GlobalPage global;
 	GradePage grade;
@@ -33,7 +36,7 @@ public class TVOLearnTests extends BaseClass {
 	TermsPage terms;
 	AccessibilityPage accessibility;
 	FaqPage faq;
-
+	
 	/*
 	 * Constructor for TVOLearnTests class Invokes the superclass constructor
 	 */
