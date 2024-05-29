@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -20,7 +21,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import basepackage.BaseClass;
 
 
-public class ExtentReportManager implements ITestListener{
+public class ExtentReportManager extends SoftAssert implements ITestListener{
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
@@ -65,7 +66,7 @@ public class ExtentReportManager implements ITestListener{
 		test.log(Status.FAIL, result.getThrowable());
 		String screenshotPath = BaseClass.getScreenshot(result.getName());
 		test.log(Status.FAIL, MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-		
+	
 	}
 	
 	public void onTestSkipped(ITestResult result)

@@ -11,7 +11,6 @@ public class AccessibilityPage extends BaseClass {
     @FindBy(xpath = "//h1")
     WebElement accessibilityPageHeading;
 
-    /* Constructor to initialize web elements on the page */
     public AccessibilityPage() {
         PageFactory.initElements(driver, this);
     }

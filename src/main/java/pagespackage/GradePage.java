@@ -15,7 +15,6 @@ public class GradePage extends BaseClass {
 	@FindBy(xpath = "//li[@class='current']")
 	WebElement currentBreadcrumb;
 
-	/* Constructor to initialize web elements on the page */
 	public GradePage() {
 		PageFactory.initElements(driver, this);
 	}

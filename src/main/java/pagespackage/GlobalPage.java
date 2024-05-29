@@ -21,7 +21,6 @@ public class GlobalPage extends BaseClass {
     @FindBy(xpath = "//div[contains(text(),'Mathematics')]")
     WebElement subjectCard;
 
-    /* Constructor to initialize web elements on the page */
     public GlobalPage() {
         PageFactory.initElements(driver, this);
     }

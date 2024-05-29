@@ -11,7 +11,6 @@ public class ForTeachersPage extends BaseClass {
 	@FindBy(xpath = "//li[@class='current']")
 	WebElement currentBreadcrumb;
 
-	/* Constructor to initialize web elements on the page */
 	public ForTeachersPage() {
 		PageFactory.initElements(driver, this);
 	}

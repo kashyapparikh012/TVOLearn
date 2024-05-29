@@ -12,7 +12,6 @@ public class HomePage extends BaseClass {
 	@FindBy(xpath = "//li[@class='current']")
 	WebElement currentBreadcrumb;
 
-	/* Constructor to initialize web elements on the page */
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}

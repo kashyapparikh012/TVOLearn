@@ -59,7 +59,6 @@ public class SubjectPage extends BaseClass {
 	WebElement faqFooter;
 	public String resourcesLink = "//ul[@id='resources']/li/a";
 
-	/* Constructor to initialize web elements on the page */
 	public SubjectPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -323,7 +322,12 @@ public class SubjectPage extends BaseClass {
 	 */
 	public String getSubscribeInlineError() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(subscribeInlineError));
+		try{
+			wait.until(ExpectedConditions.visibilityOf(subscribeInlineError));
+		}catch (Exception e){
+			logger.error(e.getMessage()+" ##Element not found for inline error");
+		}
+		
 		return subscribeInlineError.getText();
 	}
 
@@ -350,7 +354,11 @@ public class SubjectPage extends BaseClass {
 	 */
 	public String getErrorResponse() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(errorResponse));
+		try{
+			wait.until(ExpectedConditions.visibilityOf(errorResponse));
+		}catch (Exception e){
+			logger.error(e.getMessage()+" ##Element not found for error response");
+		}
 		return errorResponse.getText();
 
 	}
@@ -362,7 +370,12 @@ public class SubjectPage extends BaseClass {
 	 */
 	public String getSuccessResponse() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.visibilityOf(successResponse));
+		try{
+			wait.until(ExpectedConditions.visibilityOf(successResponse));
+		}catch (Exception e){
+			logger.error(e.getMessage()+" ##Element not found for success response");
+		}
+		
 		return successResponse.getText();
 	}
 

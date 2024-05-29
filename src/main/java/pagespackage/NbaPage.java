@@ -11,7 +11,6 @@ public class NbaPage extends BaseClass {
 	@FindBy(xpath = "//li[@class='current']")
 	WebElement currentBreadcrumb;
 
-	/* Constructor to initialize web elements on the page */
 	public NbaPage() {
 		PageFactory.initElements(driver, this);
 	}

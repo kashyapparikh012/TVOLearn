@@ -11,7 +11,6 @@ public class PrivacyNoticePage extends BaseClass {
     @FindBy(xpath = "//h1")
     WebElement privacyNoticePageHeading;
 
-    /* Constructor to initialize web elements on the page */
     public PrivacyNoticePage() {
         PageFactory.initElements(driver, this);
     }

@@ -11,7 +11,6 @@ public class FaqPage extends BaseClass {
 	@FindBy(xpath = "//h1")
 	WebElement faqPageHeading;
 
-	/* Constructor to initialize web elements on the page */
 	public FaqPage() {
 		PageFactory.initElements(driver, this);
 	}
